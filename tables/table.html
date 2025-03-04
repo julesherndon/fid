@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #3a5f73; /* Darker blue */
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #89CFF0; /* Pastel blue */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #A2C2E0; /* Soft light blue */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #B0E0E6; /* Powder blue */
+        }
+
+        tr:hover {
+            background-color: #ADD8E6; /* Light blue on hover */
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .artist-name {
+            font-weight: bold;
+            color: #2e3b4e; /* Darker blue for artist names */
+        }
+
+        td, th {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Famous Artists</h1>
+    <table>
+        <tr>
+            <th>Artist</th>
+            <th>Nationality</th>
+            <th>Art Movement</th>
+            <th>Famous Work</th>
+            <th>Year</th>
+            <th>Image</th>
+        </tr>
+        <tr>
+            <td class="artist-name">Leonardo da Vinci</td>
+            <td>Italian</td>
+            <td>Renaissance</td>
+            <td>Mona Lisa</td>
+            <td>1503–1506</td>
+            <td><img src="mona lisa.jpg" alt="image of a woman"></td> 
+        </tr>
+        <tr>
+            <td class="artist-name">Pablo Picasso</td>
+            <td>Spanish</td>
+            <td>Cubism</td>
+            <td>Guernica</td>
+            <td>1937</td>
+            <td><img src="guernica.jpg" alt="abstract art"></td>
+        </tr>
+        <tr>
+            <td class="artist-name">Frida Kahlo</td>
+            <td>Mexican</td>
+            <td>Surrealism</td>
+            <td>The Two Fridas</td>
+            <td>1939</td>
+            <td><img src="two fridas.jpg" alt="two women"></td>
+        </tr>
+        <tr>
+            <td class="artist-name">Vincent van Gogh</td>
+            <td>Dutch</td>
+            <td>Post-Impressionism</td>
+            <td>Starry Night</td>
+            <td>1889</td>
+            <td><img src="starry night.jpg" alt="starry night"></td>
+        </tr>
+        <tr>
+            <td class="artist-name">Claude Monet</td>
+            <td>French</td>
+            <td>Impressionism</td>
+            <td>Water Lilies</td>
+            <td>1916</td>
+            <td><img src="water lilies.jpg" alt="water lilies"></td>
+        </tr>
+        <tr>
+            <td class="artist-name">Salvador Dalí</td>
+            <td>Spanish</td>
+            <td>Surrealism</td>
+            <td>The Persistence of Memory</td>
+            <td>1931</td>
+            <td><img src="the persistence od memory.jpg" alt="imagry of memory"></td>
+        </tr>
+        <tr>
+            <td class="artist-name">Andy Warhol</td>
+            <td>American</td>
+            <td>Pop Art</td>
+            <td>Campbell's Soup Cans</td>
+            <td>1962</td>
+            <td><img src="soup cans.jpg" alt="soup can"></td>
+        </tr>
+        <tr>
+            <td class="artist-name">Jackson Pollock</td>
+            <td>American</td>
+            <td>Abstract Expressionism</td>
+            <td>No. 5, 1948</td>
+            <td>1948</td>
+            <td><img src="no.5,1948.jpg" alt="abstract art"></td>
+        </tr>
+    </table>
+</body>
+</html>
