@@ -1,26 +1,196 @@
 
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: white; /* White background for consistency */
+            margin: 0 10%;
+            font-family: Georgia, "Times New Roman", Times, serif; /* Match other pages' font */
+        }
 
-<style>
-       body {
-      background-color: #faf2e4;
-      margin: 0 10%;
-      font-family: sans-serif;
-      }
-h1  {	
-	color: #d1633c;
-	font-size: 1.5em
-}
+        /* Navigation Styling */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #d1633c; /* Orange background */
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 60px;
+        }
 
-</style>
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: black; /* Black text color */
+            text-decoration: none;
+            font-size: 1.4em; /* Larger font size */
+            padding: 15px;
+            font-weight: bold; /* Bold text */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+        }
+
+        a:hover {
+            color: white; /* White text on hover */
+            background-color: #57b1dc; /* Blue background on hover */
+        }
+
+        /* Main Content Styling */
+        h1 {
+            color: #d1633c; /* Consistent orange text */
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 80px; /* Space for fixed navigation */
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #d1633c; /* Orange color for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Reservation Section Styling */
+        .reservation-section {
+            background-color: #f4f4f4;
+            padding: 2em;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .reservation-section h2 {
+            text-align: center;
+            color: #d1633c;
+            font-size: 1.8em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        input, select {
+            padding: 10px;
+            width: 100%;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #d1633c;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #57b1dc;
+        }
+
+        /* Footer Styling */
+        small {
+            color: #999;
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
 <body>
-<h1>Contact Us</h1>
-<p><a href="https://mail.google.com">mailblackgoose@gmail.com.</a></p>
-<p>555-336-1800</p>
-<h1>Location and Hours</h1>
-<br>Seekonk, Massachusetts;</br>
-<br>Monday through Thursday 11am to 9pm;</br> <br>Friday and Saturday, 11am to midnight</br>
-<p><a href="index.html">Back to Home Page</a></p>
-</body>
 
-</HTML>
+    <!-- Navigation Links -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="bgnews.html">Black Goose Bistro News</a></li>
+        <li><a href="jenskitchen.html">Jen's Kitchen</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+    </ul>
+
+    <!-- Contact Information -->
+    <h1>Contact Us</h1>
+    <p><a href="mailto:mailblackgoose@gmail.com">mailblackgoose@gmail.com</a></p>
+    <p>555-336-1800</p>
+
+    <!-- Location and Hours -->
+    <h1>Location and Hours</h1>
+    <p>Seekonk, Massachusetts</p>
+    <p>Monday through Thursday: 11am to 9pm</p>
+    <p>Friday and Saturday: 11am to midnight</p>
+
+    <!-- Reservation Section -->
+    <div class="reservation-section">
+        <h2>Make a Reservation</h2>
+        <form action="submit_reservation.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="date">Reservation Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Reservation Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <input type="submit" value="Submit Reservation">
+        </form>
+    </div>
+
+    <!-- Back to Home Page -->
+    <p><a href="index.html">Back to Home Page</a></p>
+
+    <small>&copy; 2025, Black Goose Bistro. All Rights Reserved.</small>
+
+</body>
+</html>
