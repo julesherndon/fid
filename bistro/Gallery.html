@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,38 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Goose Bistro Gallery</title>
     <style>
+        /* General Reset */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body Styling */
         body {
-            font-family: Arial, sans-serif;
+            background-color: #faf2e4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0;
-            padding: 20px;
-            background-color: #faf2e4;
-           h1 {
-            color: #d1633c;
-              font-size: 2em;
-           }
-            h2 {
-            color: #d1633c;
-              font-size: 2em;
-            }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #D1633C;
+            width: 100%;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #D1633C;
+            background-color: white;
+            padding: 0.5em;
+            border-radius: 5px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 2em 0;
+            background: url('images/purpledot.png') repeat-x center center;
+        }
+
+        header img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        header h1 {
+            color: #D1633C;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #D1633C;
+        }
+
+        /* Gallery Section */
+        section {
+            margin: 2em;
+        }
+
+        h2 {
+            color: #D1633C;
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #57b1dc;
+            color: white;
+            padding: 1em 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Image Gallery</h1>
- 
-    <p>Not only is our food good, it's also good-looking! Our patrons often stop to admire our fare with a quick Instagram before digging in. We've collected a few of our favorite shots here.</p>
-    <h2>Our Baked Goods</h2>
-    <p><img src="photos/bread-800.jpg" alt="close-up of sliced rustic bread" width="800" height="600"></p><br>
-    <p>We start our day at the crack of dawn to bake our own muffins, bread, and dinner rolls. Loaves not used that day are donated to the local food shelter.</p>
-    <h2>Our Burgers</h2>
-    <p><img src="photos/burgers-800.jpg" alt="close-up of burgers" width="800" height="600"></p><br>
-    <p>People come from all over to enjoy our lovingly made burgers. We grind our own locally-sourced organic beef and turkey so you know it's fresh and free from fillers and other nonsense. Go for one of our creative topping combos or stick with the classics.</p>
-    <h2>Catch of the Day</h2>
-    <p><img src="photos/fish-800.jpg" alt="close-up of fish" width="800" height="600"></p><br>
-    <p>Our chef works with local fishermen to pick the freshest the sea has to offer for our daily seafood special. Our Roast Cod Caponata with Roasted Potatoes is an old favorite with our regulars.</p>
-    
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index updated.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="bgnews.html">Black Goose Bistro News</a>
+        <a href="jenskitchen.html">Jen's Kitchen</a>
+        <a href="contact updated.html">Contact</a>
+        <a href="Gallery.html">Gallery</a>
+    </nav>
+
+    <!-- Header with Embedded Image -->
+    <header>
+        <h1>Black Goose Bistro Gallery</h1>
+        <p>Not only is our food good, it's also good-looking! Our patrons often stop to admire our fare with a quick Instagram before digging in. We've collected a few of our favorite shots here.</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <section>
+        <h2>Our Baked Goods</h2>
+        <img src="photos/bread-800.jpg" alt="close-up of sliced rustic bread">
+        <p>We start our day at the crack of dawn to bake our own muffins, bread, and dinner rolls. Loaves not used that day are donated to the local food shelter.</p>
+    </section>
+
+    <section>
+        <h2>Our Burgers</h2>
+        <img src="photos/burgers-800.jpg" alt="close-up of burgers">
+        <p>People come from all over to enjoy our lovingly made burgers. We grind our own locally-sourced organic beef and turkey so you know it's fresh and free from fillers and other nonsense. Go for one of our creative topping combos or stick with the classics.</p>
+    </section>
+
+    <section>
+        <h2>Catch of the Day</h2>
+        <img src="photos/fish-800.jpg" alt="close-up of fish">
+        <p>Our chef works with local fishermen to pick the freshest the sea has to offer for our daily seafood special. Our Roast Cod Caponata with Roasted Potatoes is an old favorite with our regulars.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Black Goose Bistro</p>
+    </footer>
+
 </body>
 </html>
