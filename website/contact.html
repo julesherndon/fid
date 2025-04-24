@@ -1,0 +1,108 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f5;
+  margin: 0;
+  padding: 0;
+  color: #2f3e46;
+}
+
+header {
+  background-color: #354f52;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+footer {
+  background-color: #cad2c5;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+    </style>
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - TrailBlazers</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Contact TrailBlazers</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Get in Touch</h2>
+    <p>If you have questions, suggestions, or would like to volunteer, we’d love to hear from you! Fill out the form below and a member of our team will respond as soon as possible.</p>
+
+    <form action="mailto:info@trailblazers.org" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject"><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="6" cols="40" required></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+      <input type="reset" value="Clear">
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      <a href="contact.html">Contact</a> | 
+      &copy; 2025 TrailBlazers Hiking Club &bull; Take a Hike</p>
+  </footer>
+</body>
+</html>

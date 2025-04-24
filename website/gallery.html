@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery - TrailBlazers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f5;
+      margin: 0;
+      padding: 0;
+      color: #2f3e46;
+    }
+
+    header {
+      background-color: #354f52;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    .gallery img {
+      width: 95%; /* Very large images */
+      max-width: 1200px;
+      height: auto;
+      border: 10px solid white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      background-color: #cad2c5;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Photo Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h2>Memories from the Trail</h2>
+    <div class="gallery">
+      <img src="canyon-2602307_1280.jpg" alt="Hiker by lake">
+      <img src="sky-2628441_1280.jpg" alt="Trail in forest">
+      <img src="river-5662293_1280.jpg" alt="Mountain view">
+      <img src="sandstone-4625_1280.jpg" alt="Group at summit">
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 TrailBlazers Hiking Club &bull; Take a Hike</p>
+  </footer>
+</body>
+</html>
