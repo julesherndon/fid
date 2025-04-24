@@ -1,107 +1,167 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Black Goose Bistro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
   <style>
     body {
-      background-color: #faf2e4;
-      font-family: sans-serif;
+      background-color: white;
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
+      color: black;
     }
-    h1 {
-      text-align: center;
-      font-family: serif;
-      font-weight: normal;
-      text-transform: uppercase;
-      border-bottom: 1px solid #57b1dc;
-      margin-top: 50px;
-    }
-    h2, h3, h4 {
-      color: #d1633c;
-      font-size: 1em;
-    }
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #57b1dc;
+
+    .navbar {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #d1633c;
+      padding: 20px 0;
       position: sticky;
       top: 0;
       width: 100%;
+      z-index: 1000;
     }
-    li {
-      display: inline;
-      margin-right: 20px;
-    }
-    a {
+
+    .navbar a {
+      color: white;
       text-decoration: none;
+      font-size: 1.2em;
+      font-family: 'Open Sans', sans-serif;
+      padding: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #000;
+    }
+
+    .logo {
+      display: block;
+      margin: 20px auto;
+      width: 150px;
+      height: auto;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #d1633c;
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    .order-now-text {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #d1633c;
+      margin: 20px 0;
+    }
+
+    .order-button-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .order-button {
+      background-color: #d1633c;
+      border: none;
+      padding: 15px 30px;
       color: white;
       font-size: 1.2em;
-      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
     }
-    a:hover {
-      color: #d1633c;
+
+    .order-button:hover {
+      background-color: #a34626;
     }
-    footer {
-        border-top: 1px solid #57b1dc;
-        text-align: center;
-        padding: 1em;
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    footer img {
-        width: 40px;
-        height: 40px;
-        margin-left: 5em;
-        margin-right: 5em;
+
+    .responsive-image {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin: 40px 0;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+      }
+
+      .navbar a {
+        padding: 10px 0;
+      }
+
+      .logo {
+        width: 100px;
+      }
+
+      .order-now-text {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
-
-
-
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="bgnews.html">Black Goose Bistro News</a></li>
-    <li><a href="jenskitchen.html">Jen's Kitchen</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="Gallery.html">Gallery</a></li>
-  </ul>
-
-  <h1><img src="bistro/blackgoose.png" alt="logo" width="400" height="400"><br><br>Black Goose Bistro</h1>
 <body>
-  <h1>Order Your Pizza Now!</h1>
-  <p>Click the button below to place your order.</p>
+  <nav class="navbar">
+    <a href="index updated.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="bgnews.html">Black Goose Bistro News</a>
+    <a href="jenskitchen.html">Jen's Kitchen</a>
+    <a href="contact updated.html">Contact</a>
+    <a href="Gallery.html">Gallery</a>
+  </nav>
 
+  <img src="bistro/blackgoose.png" alt="Black Goose Bistro Logo" class="logo" />
+
+  <hr />
+
+  <div class="order-now-text">Order a Pizza Now</div>
 
   <div class="order-button-container">
-    <a href="pizzaorderform.html"> 
-      <button class="order-button" type="submit">
-    <img src="ordernowbutton.gif" alt="Order Now" height="100" width="100">
-  </button>
+    <a href="pizzaorderform.html">
+      <button class="order-button" type="button">Order Now</button>
     </a>
   </div>
- 
-  <h2>The Restaurant</h2>
-  <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
 
-  <h3>Catering</h3>
-  <p>You have fun. <em>We'll handle the cooking.</em> Black Goose Catering can handle events from snacks for a meetup to elegant corporate fundraisers.</p>
+  <img src="alex-5Ix8feOXftc-unsplash.jpg" alt="Picture of the restaurant building" class="responsive-image" />
 
-  <h4>Location and Hours</h4>
-  <p>Seekonk, Massachusetts;</p>
-  <p>Monday through Thursday 11am to 9pm;</p>
-  <p>Friday and Saturday, 11am to midnight</p>
+  <div class="content">
+    <h2>The Restaurant</h2>
+    <p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu features rotating dishes that highlight the freshest seasonal and local ingredients.</p>
 
+    <h3>Catering</h3>
+    <p>Let us take care of the food while you enjoy the event. Black Goose Catering handles everything from casual gatherings to formal events with ease and excellence.</p>
+
+    <h4>Location and Hours</h4>
+    <p>Seekonk, Massachusetts</p>
+    <p>Monday through Thursday: 11am to 9pm</p>
+    <p>Friday and Saturday: 11am to midnight</p>
+
+    <iframe src="https://www.google.com/maps?q=Seekonk,MA&output=embed"></iframe>
+  </div>
 </body>
-<footer>
-    <p>Please visit our social media pages</p>
-    <p><img src="twitter.svg" alt="twitter"></p>
-    <p><img src="tumblr.svg" alt="tumblr"></p>
-    <p><img src="facebook.svg" alt="facebook"></p>
-</footer>
-
 </html>
